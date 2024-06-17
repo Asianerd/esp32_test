@@ -1,5 +1,5 @@
 // const ESP_BACKEND_ADDRESS = 'http://127.0.0.1:8000';
-const ESP_BACKEND_ADDRESS = 'https://www.ozmium.xyz/backend/esp';
+const ESP_BACKEND_ADDRESS = 'https://www.ozmium.xyz/esp_backend/';
 
 function submitRequest() {
     sendGetRequest(`${ESP_BACKEND_ADDRESS}/set_current/${encodeURIComponent(document.querySelector("#submission").value)}`, (r) => {
