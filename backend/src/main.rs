@@ -25,7 +25,7 @@ pub fn set_current(w: &State<Mutex<String>>, word: String) -> String {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::custom(rocket::config::Config::figment().merge(("port", 8000)))
+    rocket::custom(rocket::config::Config::figment().merge(("port", 9000)))
         .manage(Mutex::new("lorem ipsum".to_string()))
         .mount("/", routes![index])
 
